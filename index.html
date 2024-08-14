@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+CL&display=swap"
+    rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .text {
+      font-family: "Josefin Sans", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="overflow-hidden">
+  <img src="./images/bg-pattern-desktop.svg" class="bg-cover bg-left relative">
+  <img src="./images/hero-desktop.jpg" class="h-[105%] absolute top-0 right-0" alt="" srcset="">
+  <header>
+    <div class=" container ml-28 mt-24">
+      <img src="./images/logo.svg" class="absolute top-14" alt="" srcset="">
+    </div>
+  </header>
+
+  <main>
+    <div class=" container ml-28 mt-24 absolute top-28">
+      <h1 class=" text text-4xl  text-red-300 font-light tracking-widest">WE'RE</h1>
+      <h1 class=" text text-4xl font-medium tracking-widest">COMING</h1>
+      <h1 class=" text text-4xl font-medium tracking-widest">SOON</h1>
+      <p class="text text-red-300 mt-4 text-sm">Hello fellow shoppers! We're currently building our new <br> fashion
+        store.
+        Add your email below to stay up-to-date with <br> announcements and our launch deals.</p>
+    </div>
+
+    <div class=" container ml-28 mt-24 absolute top-80">
+      <input id="userInput1" type="text" placeholder="Email Address"
+        class="outline-none mt-3 rounded-full  border border-red-200 hover:border-red-300 focus:border-red-300 focus-visible:border-red-700  p-5 focus:border-2 focus-visible:bg-transparent h-3 w-80 relative text text-sm">
+      <img src="./images/icons8-error-30 (1).png" class="absolute top-6 left-64 w-5 hidden" id="icon" alt="" srcset="">
+      <button onclick="show()"
+        class="absolute left-72 top-3 rounded-3xl pb-1 w-16 h-10 text-white transition ease-in-out delay-150 bg-red-300 hover:-translate-x-1 hover:scale-110 hover:bg-red-300 duration-300  hover:shadow-2xl shadow-red-500/50  ">
+        >
+      </button>
+
+    </div>
+  </main>
+
+  <div class=" text container ml-28 mt-14 absolute  bottom-14 p-5 m-5 text-red-500" id="display"></div>
+
+</body>
+
+<script src="index.js"></script>
+
+</html>
