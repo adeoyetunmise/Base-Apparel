@@ -47,24 +47,28 @@
           <a href="#">
             <li class="border-b-2 border-white hover:border-b-2 hover:border-red-500 py-8">Collections</li>
           </a>
-          <a href="#"></a>
-          <li class="border-b-2 border-white hover:border-b-2 hover:border-red-500 py-8">Men</li>
-          <a href="#"></a>
-          <li class="border-b-2 border-white hover:border-b-2 hover:border-red-500 py-8">Women</li></a>
-          <a href="#"></a>
-          <li class="border-b-2 border-white hover:border-b-2 hover:border-red-500 py-8">About</li></a>
-          <a href="#"></a>
-          <li class="border-b-2 border-white hover:border-b-2 hover:border-red-500 py-8">Contact</li></a>
+          <a href="#">
+            <li class="border-b-2 border-white hover:border-b-2 hover:border-red-500 py-8">Men</li>
+          </a>
+          <a href="#">
+            <li class="border-b-2 border-white hover:border-b-2 hover:border-red-500 py-8">Women</li>
+          </a>
+          <a href="#">
+            <li class="border-b-2 border-white hover:border-b-2 hover:border-red-500 py-8">About</li>
+          </a>
+          <a href="#">
+            <li class="border-b-2 border-white hover:border-b-2 hover:border-red-500 py-8">Contact</li>
+          </a>
         </ul>
       </div>
     </div>
 
     <div class="flex flex-row float-right space-x-6 items-center">
       <div>
-        <img src="./images/icon-cart.svg" class="h-4" alt="cart">
+        <a href=""><img src="./images/icon-cart.svg" class="h-4" alt="cart"></a>
       </div>
       <div>
-        <img src="./images/image-avatar.png" class="h-8" alt="avater">
+        <a href=""><img src="./images/image-avatar.png" class="h-8" alt="avater"></a>
       </div>
     </div>
   </nav>
@@ -72,17 +76,29 @@
     <div class="flex">
       <div>
         <img src="./images/image-product-1.jpg" class="h-96 rounded-xl mt-20 ml-16" alt="">
-        <div class=" flex flex-row mt-10 ml-16 space-x-11">
-          <img src="./images/image-product-1-thumbnail.jpg" class="h-16 rounded-xl " alt="">
-          <img src="./images/image-product-2-thumbnail.jpg" class="h-16 rounded-xl  " alt="">
-          <img src="./images/image-product-3-thumbnail.jpg" class="h-16 rounded-xl  " alt="">
-          <img src="./images/image-product-4-thumbnail.jpg" class="h-16 rounded-xl  " alt="">
+        <div class=" flex flex-row mt-10 ml-16 space-x-11 ">
+          <a href="#"><img src="./images/image-product-1-thumbnail.jpg"
+              class="h-16 rounded-xl hover:opacity-45 transition duration-300 ease-in-out hover:border-2 hover:border-orange-500"
+              alt=""></a>
+
+          <a href="#"><img src="./images/image-product-2-thumbnail.jpg"
+              class="h-16 rounded-xl hover:opacity-45 transition duration-300 ease-in-out hover:border-2 hover:border-orange-500"
+              alt=""></a>
+
+          <a href="#"><img src="./images/image-product-3-thumbnail.jpg"
+              class="h-16 rounded-xl hover:opacity-45 transition duration-300 ease-in-out hover:border-2 hover:border-orange-500"
+              alt=""></a>
+
+          <a href="#"><img src="./images/image-product-4-thumbnail.jpg"
+              class="h-16 rounded-xl hover:opacity-45 transition duration-300 ease-in-out hover:border-2 hover:border-orange-500"
+              alt=""></a>
+
         </div>
       </div>
 
-      <div class="mt-4 p-28 ">
+      <div class="mt-10 p-28 ">
         <p class="text-xs text-gray-600">SNEAKER COMPANY</p>
-        <h1 class="text-3xl font-bold">Fall Limited Edition <br /> Sneakers</h1>
+        <h1 class="text-3xl font-bold mt-4">Fall Limited Edition <br /> Sneakers</h1>
         <p class="mt-5 text-xs text-gray-600">These low-profile sneakers are your perfect casual wear <br />
           companion.Featuring a durable rubber outer sole, they’ll <br /> withstand everything the weather can offer.
         </p>
@@ -93,16 +109,19 @@
         </div>
         <p class="mt-3 line-through text-xs text-gray-600">$250.00</p>
 
-        <div class="flex space-x-20 mt-6">
-          <div class="space-x-7 p-2 bg-gray-100 rounded-md">
-            <a href=""><span>-</span></a>
-            <span>0</span>
-            <a href="">+</span></a>
+        <div class="flex space-x-10 mt-8">
+          <div class=" flex space-x-8 bg-gray-100 items-center p-1 rounded-md">
+            <a href="#"><img src="./images/icon-minus.svg" id="decrement" alt=""><a />
+              <p id="input"> 0 </p>
+              <a href="#"><img src="./images/icon-plus.svg" id="increment" alt=""></a>
           </div>
 
-          <div>
-            <img src="./images/icon-cart.svg" alt="">
-          </div>
+          <a href="#">
+            <div class="bg-orange-400 rounded flex space-x-2 items-center p-1 w-52 text-xs" onclick="addToCart()">
+              <img src="./images/icon-cart.svg" class="h-4 mt-1 ml-10  " alt="">
+              <span class="mt-1  font-semibold">Add to cart</span>
+            </div>
+          </a>
         </div>
 
       </div>
