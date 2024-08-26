@@ -65,33 +65,36 @@
 
     <div class="flex flex-row float-right space-x-6 items-center">
       <div>
-        <a href=""><img src="./images/icon-cart.svg" class="h-4" alt="cart"></a>
+        <a href=""><img src="./images/icon-cart.svg" class="h-4" id="showCardImage" alt="cart"></a>
       </div>
       <div>
         <a href=""><img src="./images/image-avatar.png" class="h-8" alt="avater"></a>
       </div>
     </div>
   </nav>
+  <div id="card-container" class="absolute right-24"></div>
   <main>
     <div class="flex">
       <div>
-        <img src="./images/image-product-1.jpg" class="h-96 rounded-xl mt-20 ml-16" alt="">
+        <div id="displayDiv">
+          <img src="./images/image-product-1.jpg " class="h-96 rounded-xl mt-20 ml-16" id="largeImage" alt="">
+        </div>
         <div class=" flex flex-row mt-10 ml-16 space-x-11 ">
-          <a href="#"><img src="./images/image-product-1-thumbnail.jpg"
+          <a href="#"><img src="./images/image-product-1.jpg"
               class="h-16 rounded-xl hover:opacity-45 transition duration-300 ease-in-out hover:border-2 hover:border-orange-500"
-              alt=""></a>
+              onclick="displayImage(this)" alt=""></a>
 
-          <a href="#"><img src="./images/image-product-2-thumbnail.jpg"
+          <a href="#"><img src="./images/image-product-2.jpg"
               class="h-16 rounded-xl hover:opacity-45 transition duration-300 ease-in-out hover:border-2 hover:border-orange-500"
-              alt=""></a>
+              onclick="displayImage(this)" alt=""></a>
 
-          <a href="#"><img src="./images/image-product-3-thumbnail.jpg"
+          <a href="#"><img src="./images/image-product-3.jpg"
               class="h-16 rounded-xl hover:opacity-45 transition duration-300 ease-in-out hover:border-2 hover:border-orange-500"
-              alt=""></a>
+              onclick="displayImage(this)" alt=""></a>
 
-          <a href="#"><img src="./images/image-product-4-thumbnail.jpg"
+          <a href="#"><img src="./images/image-product-4.jpg"
               class="h-16 rounded-xl hover:opacity-45 transition duration-300 ease-in-out hover:border-2 hover:border-orange-500"
-              alt=""></a>
+              onclick="displayImage(this)" alt=""></a>
 
         </div>
       </div>
@@ -104,7 +107,7 @@
         </p>
 
         <div class="flex space-x-3 mt-6 ">
-          <span class="font-bold ">$125.00</span>
+          <span class="font-bold " id="price">$125.00</span>
           <p class="bg-black text-white rounded w-11  text-center">50%</p>
         </div>
         <p class="mt-3 line-through text-xs text-gray-600">$250.00</p>
@@ -117,7 +120,8 @@
           </div>
 
           <a href="#">
-            <div class="bg-orange-400 rounded flex space-x-2 items-center p-1 w-52 text-xs" onclick="addToCart()">
+            <div class="bg-orange-400 rounded flex space-x-2 items-center p-1 w-52 text-xs" id="addToCart"
+              onclick="addToCart()">
               <img src="./images/icon-cart.svg" class="h-4 mt-1 ml-10  " alt="">
               <span class="mt-1  font-semibold">Add to cart</span>
             </div>
@@ -127,6 +131,9 @@
       </div>
     </div>
   </main>
+
+
+
   <!-- Collections
   Men
   Women
