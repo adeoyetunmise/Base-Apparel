@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
+<<<<<<< HEAD
 @tailwind utilities;
+=======
+@tailwind utilities;
+
+col{
+    box-shadow: 0px 4px 8px rgb(112, 111, 111);
+    
+}
+>>>>>>> cd0d4c1e10c9b9aacedfd20ffbac463ed89ee33f

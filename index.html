@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Base Apparel Coming Soon Page</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
@@ -83,10 +84,38 @@
         justify-content: center;
         text-align: center;
       }
+=======
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kumbh+Sans:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+CL&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      font-family: "Kumbh Sans", sans-serif;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+>>>>>>> cd0d4c1e10c9b9aacedfd20ffbac463ed89ee33f
     }
   </style>
 </head>
 
+<<<<<<< HEAD
 <body class="lg:overflow-hidden">
 
   <!-- Background Image (hidden on mobile) -->
@@ -122,10 +151,108 @@
           class="absolute right-3 top-1/2 transform -translate-y-1/2 bg-red-300 text-white px-6 py-2 rounded-3xl transition ease-in-out hover:scale-110 hover:bg-red-400">
           >
         </button>
+=======
+<body class="mx-16">
+
+
+  <nav class="flex flex-row justify-between w-full items-center mt-5 border-b-[1px]">
+    <div class="flex flex-row space-x-8 items-center -mt-4">
+      <div class="flex">
+        <img src="./images/logo.svg" class="h-5" alt="Logo" />
+
+      </div>
+      <div class="flex flex-col">
+        <ul class="flex flex-row space-x-3 text-xs items-center text-gray-600">
+          <a href="#">
+            <li class="border-b-2 border-white hover:border-b-2 hover:border-red-500 py-8">Collections</li>
+          </a>
+          <a href="#">
+            <li class="border-b-2 border-white hover:border-b-2 hover:border-red-500 py-8">Men</li>
+          </a>
+          <a href="#">
+            <li class="border-b-2 border-white hover:border-b-2 hover:border-red-500 py-8">Women</li>
+          </a>
+          <a href="#">
+            <li class="border-b-2 border-white hover:border-b-2 hover:border-red-500 py-8">About</li>
+          </a>
+          <a href="#">
+            <li class="border-b-2 border-white hover:border-b-2 hover:border-red-500 py-8">Contact</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flex flex-row float-right space-x-6 items-center">
+      <div>
+        <a href=""><img src="./images/icon-cart.svg" class="h-4" id="showCardImage" alt="cart"></a>
+      </div>
+      <div>
+        <a href=""><img src="./images/image-avatar.png" class="h-8" alt="avater"></a>
+      </div>
+    </div>
+  </nav>
+  <div id="card-container" class="absolute right-24"></div>
+  <main>
+    <div class="flex">
+      <div>
+        <div id="displayDiv">
+          <img src="./images/image-product-1.jpg " class="h-96 rounded-xl mt-20 ml-16" id="largeImage" alt="">
+        </div>
+        <div class=" flex flex-row mt-10 ml-16 space-x-11 ">
+          <a href="#"><img src="./images/image-product-1.jpg"
+              class="h-16 rounded-xl hover:opacity-45 transition duration-300 ease-in-out hover:border-2 hover:border-orange-500"
+              onclick="displayImage(this)" alt=""></a>
+
+          <a href="#"><img src="./images/image-product-2.jpg"
+              class="h-16 rounded-xl hover:opacity-45 transition duration-300 ease-in-out hover:border-2 hover:border-orange-500"
+              onclick="displayImage(this)" alt=""></a>
+
+          <a href="#"><img src="./images/image-product-3.jpg"
+              class="h-16 rounded-xl hover:opacity-45 transition duration-300 ease-in-out hover:border-2 hover:border-orange-500"
+              onclick="displayImage(this)" alt=""></a>
+
+          <a href="#"><img src="./images/image-product-4.jpg"
+              class="h-16 rounded-xl hover:opacity-45 transition duration-300 ease-in-out hover:border-2 hover:border-orange-500"
+              onclick="displayImage(this)" alt=""></a>
+
+        </div>
+      </div>
+
+      <div class="mt-10 p-28 ">
+        <p class="text-xs text-gray-600">SNEAKER COMPANY</p>
+        <h1 class="text-3xl font-bold mt-4">Fall Limited Edition <br /> Sneakers</h1>
+        <p class="mt-5 text-xs text-gray-600">These low-profile sneakers are your perfect casual wear <br />
+          companion.Featuring a durable rubber outer sole, they’ll <br /> withstand everything the weather can offer.
+        </p>
+
+        <div class="flex space-x-3 mt-6 ">
+          <span class="font-bold " id="price">$125.00</span>
+          <p class="bg-black text-white rounded w-11  text-center">50%</p>
+        </div>
+        <p class="mt-3 line-through text-xs text-gray-600">$250.00</p>
+
+        <div class="flex space-x-10 mt-8">
+          <div class=" flex space-x-8 bg-gray-100 items-center p-1 rounded-md">
+            <a href="#"><img src="./images/icon-minus.svg" id="decrement" alt=""><a />
+              <p id="input"> 0 </p>
+              <a href="#"><img src="./images/icon-plus.svg" id="increment" alt=""></a>
+          </div>
+
+          <a href="#">
+            <div class="bg-orange-400 rounded flex space-x-2 items-center p-1 w-52 text-xs" id="addToCart"
+              onclick="addToCart()">
+              <img src="./images/icon-cart.svg" class="h-4 mt-1 ml-10  " alt="">
+              <span class="mt-1  font-semibold">Add to cart</span>
+            </div>
+          </a>
+        </div>
+
+>>>>>>> cd0d4c1e10c9b9aacedfd20ffbac463ed89ee33f
       </div>
     </div>
   </main>
 
+<<<<<<< HEAD
   <!-- Error Section -->
   <div class="flex items-center space-x-4 mt-4 px-6 lg:ml-28 lg:-mt-6 w-full max-w-lg">
     <!-- Error Icon -->
@@ -137,6 +264,36 @@
 
   <script src="index.js"></script>
 
+=======
+
+
+  <!-- Collections
+  Men
+  Women
+  About
+  Contact
+
+  Sneaker Company
+
+  Fall Limited Edition Sneakers
+
+  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.
+
+  $125.00
+  50%
+  $250.00
+
+  0
+  Add to cart
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="script.js"></script>
+>>>>>>> cd0d4c1e10c9b9aacedfd20ffbac463ed89ee33f
 </body>
 
 </html>

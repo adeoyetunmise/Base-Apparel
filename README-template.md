@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 # Frontend Mentor - Base Apparel coming soon page solution
 
 This is a solution to the [Base Apparel coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+=======
+# Frontend Mentor - E-commerce product page solution
+
+This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+>>>>>>> cd0d4c1e10c9b9aacedfd20ffbac463ed89ee33f
 
 ## Table of contents
 
@@ -26,9 +32,16 @@ Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
+<<<<<<< HEAD
 - Receive an error message when the `form` is submitted if:
   - The `input` field is empty
   - The email address is not formatted correctly
+=======
+- Open a lightbox gallery by clicking on the large product image
+- Switch the large product image by clicking on the small thumbnail images
+- Add items to the cart
+- View the cart and remove items from it
+>>>>>>> cd0d4c1e10c9b9aacedfd20ffbac463ed89ee33f
 
 ### Screenshot
 
