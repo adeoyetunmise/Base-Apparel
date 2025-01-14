@@ -59,8 +59,7 @@
       <div class="relative mt-6 w-full max-w-lg">
         <input id="userInput1" type="text" placeholder="Email Address"
           class="w-full p-4 rounded-full border border-red-200 focus:outline-none focus:ring-2 focus:ring-red-300 focus:border-red-300 text-sm">
-        <img src="./images/icons8-error-30 (1).png" class="absolute top-20 left-3 transform -translate-y-1/2 w-5 hidden"
-          id="icon" alt="Error Icon">
+
         <button onclick="show()"
           class="absolute right-3 top-1/2 transform -translate-y-1/2 bg-red-300 text-white px-6 py-2 rounded-3xl transition ease-in-out hover:scale-110 hover:bg-red-400">
           >
@@ -68,8 +67,13 @@
       </div>
     </div>
   </main>
+  <div class="flex items-center w-full max-w-lg space-x-4 -mt-32 ml-32">
+    <!-- Error Icon -->
+    <img src="./images/icons8-error-30 (1).png" class="w-5 hidden" id="icon" alt="Error Icon">
 
-  <div id="display" class="text-red-500 -mt ml-28 text-sm"></div>
+    <!-- Validation Message -->
+    <div id="display" class="text-red-500 text-sm"></div>
+  </div>
 
   <script src="index.js"></script>
 

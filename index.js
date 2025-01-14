@@ -9,7 +9,7 @@ function show(){
     display.innerHTML = "Input a valid email"
 
      }else if(emailPattern.test(input)){
-        display.innerHTML = "Valid Email Address"
+        display.innerHTML = "Done, expect to hear from us soon"
         userInput1.value = ''
         
         
